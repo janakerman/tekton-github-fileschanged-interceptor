@@ -14,13 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"google.golang.org/grpc/codes"
-
-	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
-
 	"github.com/google/go-github/v35/github"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/tektoncd/triggers/pkg/apis/triggers/v1alpha1"
+	"google.golang.org/grpc/codes"
 )
 
 func TestInterceptor(t *testing.T) {
